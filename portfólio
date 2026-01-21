@@ -1,1 +1,24 @@
 style.css
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+.project {
+  background: #1e293b;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-top: 50px;
+}
