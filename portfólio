@@ -1,47 +1,85 @@
+/* =========================
+   PALETA DE CORES
+========================= */
+:root {
+  --primary: #6366f1;     /* Roxo/azul principal */
+  --secondary: #22d3ee;   /* Azul claro destaque */
+  --bg-main: #0f172a;     /* Fundo principal */
+  --bg-dark: #020617;     /* Fundo cards */
+  --text-main: #e5e7eb;   /* Texto principal */
+  --text-muted: #cbd5f5;  /* Texto secundário */
+}
+
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* =========================
+   BODY
+========================= */
 body {
   font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: #e5e7eb;
+  background: var(--bg-main);
+  color: var(--text-main);
   line-height: 1.6;
 }
 
+/* =========================
+   HERO
+========================= */
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #0f172a, #020617);
+  padding: 90px 20px;
+  background: linear-gradient(
+    135deg,
+    var(--bg-main),
+    var(--bg-dark)
+  );
 }
 
 .hero h1 {
   font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: var(--primary);
 }
 
 .subtitle {
-  margin-top: 15px;
   font-size: 1.1rem;
-  color: #cbd5f5;
+  color: var(--text-muted);
+  margin-top: 10px;
 }
 
+/* =========================
+   BOTÃO
+========================= */
 .btn {
   display: inline-block;
   margin-top: 30px;
-  padding: 12px 30px;
-  background: #6366f1;
+  padding: 12px 32px;
+  background: var(--primary);
   color: white;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+  transition: 0.2s ease;
 }
 
 .btn:hover {
-  background: #4f46e5;
+  background: var(--secondary);
+  transform: translateY(-2px);
 }
 
+/* =========================
+   SEÇÕES
+========================= */
 .section {
   max-width: 900px;
   margin: 80px auto;
@@ -51,24 +89,61 @@ body {
 .section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: var(--secondary);
 }
 
+/* =========================
+   PROJETOS
+========================= */
 .projects {
   display: grid;
   gap: 20px;
 }
 
 .project {
-  background: #020617;
-  padding: 20px;
+  background: var(--bg-dark);
+  padding: 22px;
   border-radius: 12px;
-  border: 1px solid #1e293b;
+  border-left: 4px solid var(--primary);
+  transition: 0.2s ease;
 }
 
+.project:hover {
+  transform: translateY(-4px);
+  border-left-color: var(--secondary);
+}
+
+.project h3 {
+  margin-bottom: 8px;
+}
+
+/* =========================
+   SERVIÇOS
+========================= */
 .services {
   list-style: none;
 }
 
 .services li {
   margin: 10px 0;
+  color: var(--text-muted);
 }
+
+/* =========================
+   LINKS
+========================= */
+a {
+  color: var(--secondary);
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+/* =========================
+   CONTATO
+========================= */
+#contato p {
+  margin: 8px 0;
+}
+
