@@ -1,24 +1,74 @@
-style.css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #0f172a;
-  color: white;
-  text-align: center;
-  padding: 40px;
+  color: #e5e7eb;
+  line-height: 1.6;
 }
 
-header {
-  margin-bottom: 40px;
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+}
+
+.subtitle {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #cbd5f5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: #6366f1;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #4f46e5;
+}
+
+.section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: grid;
+  gap: 20px;
 }
 
 .project {
-  background: #1e293b;
+  background: #020617;
   padding: 20px;
-  margin: 20px auto;
-  max-width: 500px;
-  border-radius: 10px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
 }
 
-h2 {
-  margin-top: 50px;
+.services {
+  list-style: none;
+}
+
+.services li {
+  margin: 10px 0;
 }
